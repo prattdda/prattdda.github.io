@@ -21,3 +21,9 @@ function draw() {
   //   ellipse(100 * i, 100, theRandom, theRandom);
   // }
 }
+
+
+function mousePressed() {
+  saveCanvas(theCanvas, "myCanvas", "jpg")
+ }
+ 
