@@ -7,12 +7,14 @@ body {
   h3 {
     margin-left: auto;
     margin-right:auto;
-    font-size: 10vw;
+    font-size: 7vw;
     padding: 3vw;
     margin: 4vw;
   
   }
-
+div {
+    text-align:center;
+}
   main {
     display: flex;
   }
@@ -21,7 +23,11 @@ body {
   }
   a {
     text-decoration: none;
-    font-size: 7vw;
+    font-size: 4vw;
+  }
+
+  img {
+      width: 30vw;
   }
   
   a:visited{
