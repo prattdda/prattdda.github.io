@@ -11,6 +11,9 @@ h1 {
 
 }
 
+iframe {
+ width: 50vw;
+}
 main {
   display: flex;
 }

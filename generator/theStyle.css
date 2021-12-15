@@ -37,3 +37,7 @@ div {
   a:hover{
     color: pink;
   }
+
+  iframe {
+    width: 100%;
+   }
