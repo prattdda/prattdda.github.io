@@ -29,7 +29,7 @@ function preload(){
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   imageMode(CENTER) 
   console.log('try not to be caught!');
 }
