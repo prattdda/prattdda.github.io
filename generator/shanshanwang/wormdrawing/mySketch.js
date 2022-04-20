@@ -1,3 +1,10 @@
+
+//Worm Drawing 2021, by Shanshan Wang 
+//disable mobile device native touch commands
+function touchMoved() {
+  return false;
+}
+
 let r,g,b;
 let button;
 let bugs = [];
@@ -7,7 +14,7 @@ let val;
 let instructions;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(displayWidth, displayHeight);
   noStroke();
   button = createButton('Change Background');
   button.position(10, 10);
@@ -56,10 +63,6 @@ function draw() {
   }
   
 }
-
-
-
-
 
 class Bug{
   constructor(tempX, tempY, tempR) {

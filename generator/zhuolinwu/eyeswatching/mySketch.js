@@ -1,3 +1,9 @@
+//disable mobile device native touch commands
+function touchMoved() {
+  // otherwise the display will move around
+  // with your touch :(
+  return false;
+}
 let t=0;
 let x=255;
 let y=255;
@@ -9,7 +15,7 @@ let w=0;
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(displayWidth, displayHeight);
 }
 
 function draw() {
@@ -75,3 +81,6 @@ function draw() {
   ellipse(400,400,w,w);
   
 }
+
+
+

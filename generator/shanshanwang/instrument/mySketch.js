@@ -1,3 +1,9 @@
+// Phyllotaxis 2021 by Shanshan Wang
+//disable mobile device native touch commands
+function touchMoved() {
+  return false;
+}
+
 let monoSynth;
 let note,velocity,time,dur;
 let area=0;
@@ -18,6 +24,7 @@ let r,c,row,col;
 function setup() {
   createCanvas(520, 400);
   monoSynth=new p5.MonoSynth();
+  
   rectMode(CENTER);
   for(var q=0;q<4;q++)
     {

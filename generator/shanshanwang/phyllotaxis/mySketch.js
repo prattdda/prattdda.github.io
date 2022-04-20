@@ -1,3 +1,10 @@
+// Phyllotaxis 2021 by Shanshan Wang
+//disable mobile device native touch commands
+function touchMoved() {
+  return false;
+}
+
+
 var x=y=0;
 var r=25;
 var a=0;
@@ -16,7 +23,7 @@ var b=160;
 var bg=1;
 
 function setup() {
-  createCanvas(400,400);
+  createCanvas(displayWidth,displayHeight);
   noStroke();
   //angleMode(DEGREES);
   

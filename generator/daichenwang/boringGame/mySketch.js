@@ -1,3 +1,8 @@
+// Boring Game 2021 by Daichen Wang
+//disable mobile device native touch commands
+function touchMoved() {
+	return false;
+  }
 //audio
 let mySoundGameOver;
 let mySoundMusic;

@@ -1,3 +1,9 @@
+// Infinate 2021 by Shanshan Wang
+//disable mobile device native touch commands
+function touchMoved() {
+	return false;
+  }
+  
 let noiseMax=1;
 let sliderRandom,sliderAlpha;
 let lineColor,bgColor;
@@ -19,7 +25,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(displayWidth, displayHeight);
   pg = createGraphics(4000, 4000);
   //sliderRandom=createSlider(0,10,5,0.1);
   //sliderAlpha=createSlider(0,200,5,0.1);
