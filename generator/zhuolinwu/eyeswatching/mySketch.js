@@ -3,8 +3,7 @@ function touchMoved() {
   // otherwise the display will move around
   // with your touch :(
   return false;
-}
-let t=0;
+}let t=0;
 let x=255;
 let y=255;
 let z=255;
@@ -15,7 +14,7 @@ let w=0;
 
 
 function setup() {
-  createCanvas(displayWidth, displayHeight);
+  createCanvas(displayWidth,displayHeight);
 }
 
 function draw() {
@@ -26,14 +25,14 @@ function draw() {
     {  
       
       stroke(Zhuo);
-      ellipse(400,400,Zhuo,Zhuo);
+      ellipse(117/2,253.2/2,Zhuo,Zhuo);
       
     }
   
   
   y = y-0.6;
   fill(0,y,0);
-  for(let lin=600; lin!=0; lin = lin-10)
+  for(let lin=60.0; lin!=0; lin = lin-10)
     {  
       stroke(lin);
       ellipse(0,0,lin,lin);
@@ -41,46 +40,43 @@ function draw() {
   
   z = z-0.6;
   fill(0,0,z)
-  for(let lin=600; lin!=0; lin = lin-10)
+  for(let lin=60.0; lin!=0; lin = lin-10)
     {  
       stroke(lin);
-      ellipse(800,0,lin,lin);
+      ellipse(117,0,lin,lin);
     }
   
   fill(0,y,z)
-  for(let lin=600; lin!=0; lin = lin-10)
+  for(let lin=60.0; lin!=0; lin = lin-10)
     {  
       stroke(lin);
-      ellipse(0,800,lin,lin);
+      ellipse(0,253.2,lin,lin);
     }
  
  x = x-0.6;
  fill(x,0,z)
-  for(let lin=600; lin!=0; lin = lin-10)
+  for(let lin=60.0; lin!=0; lin = lin-10)
     {  
       stroke(lin);
-      ellipse(800,800,lin,lin);
+      ellipse(117,253.2,lin,lin);
     }
  
   r=r+0.6;
   fill(r);
   stroke(r);
-    ellipse(400,400,r,r);
+    ellipse(117/2,253.2/2,r,r);
   
   p=p+0.2;
   fill(0,0,0);
   stroke(p);
-  ellipse(400,400,p,p);
+  ellipse(117/2,253.2/2,p,p);
   
   q=q+0.1;
   fill(255,255,255);
-  ellipse(400,400,p,q);
+  ellipse(117/2,253.2/2,p,q);
   
   w=w+0.075;
   fill(0,0,0);
-  ellipse(400,400,w,w);
+  ellipse(117/2,253.2/2,w,w);
   
 }
-
-
-

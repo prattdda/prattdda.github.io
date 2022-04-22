@@ -1,3 +1,9 @@
+// 2021 Changcheng Yang
+//disable mobile device native touch commands
+function touchMoved() {
+	return false;
+  }
+
 let IMG1;
 let IMG3;
 let mySoundGameOver;
