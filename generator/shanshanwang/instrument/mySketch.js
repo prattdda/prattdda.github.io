@@ -1,8 +1,14 @@
-// Phyllotaxis 2021 by Shanshan Wang
-//disable mobile device native touch commands
+// Instrument 2021 by Shanshan Wang
 function touchMoved() {
-  return false;
-}
+	return false;
+  }
+/* prevents the mobile browser from processing some default
+ * touch events, like swiping left for "back" or scrolling
+ * the page.
+ */
+document.ontouchmove = function(event) {
+  event.preventDefault();
+};
 
 let monoSynth;
 let note,velocity,time,dur;

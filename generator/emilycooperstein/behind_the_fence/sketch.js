@@ -1,3 +1,13 @@
+function touchMoved() {
+	return false;
+  }
+/* prevents the mobile browser from processing some default
+ * touch events, like swiping left for "back" or scrolling
+ * the page.
+ */
+document.ontouchmove = function(event) {
+  event.preventDefault();
+};
 let IMG;
 
 function preload() {

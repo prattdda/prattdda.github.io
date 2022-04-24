@@ -1,8 +1,17 @@
 // Boring Game 2021 by Daichen Wang
+// 2021 Changcheng Yang
 //disable mobile device native touch commands
 function touchMoved() {
 	return false;
   }
+/* prevents the mobile browser from processing some default
+ * touch events, like swiping left for "back" or scrolling
+ * the page.
+ */
+document.ontouchmove = function(event) {
+  event.preventDefault();
+};
+
 //audio
 let mySoundGameOver;
 let mySoundMusic;

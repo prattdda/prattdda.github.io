@@ -1,9 +1,15 @@
 // Phyllotaxis 2021 by Shanshan Wang
 //disable mobile device native touch commands
 function touchMoved() {
-  return false;
-}
-
+	return false;
+  }
+/* prevents the mobile browser from processing some default
+ * touch events, like swiping left for "back" or scrolling
+ * the page.
+ */
+document.ontouchmove = function(event) {
+  event.preventDefault();
+};
 
 var x=y=0;
 var r=25;

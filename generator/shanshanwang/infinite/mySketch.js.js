@@ -1,9 +1,14 @@
 // Infinate 2021 by Shanshan Wang
-//disable mobile device native touch commands
 function touchMoved() {
 	return false;
   }
-  
+/* prevents the mobile browser from processing some default
+ * touch events, like swiping left for "back" or scrolling
+ * the page.
+ */
+document.ontouchmove = function(event) {
+  event.preventDefault();
+};
 let noiseMax=1;
 let sliderRandom,sliderAlpha;
 let lineColor,bgColor;

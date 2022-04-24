@@ -1,9 +1,18 @@
+
+// eyes watching by Zhuolin Wu 2021
 //disable mobile device native touch commands
 function touchMoved() {
-  // otherwise the display will move around
-  // with your touch :(
-  return false;
-}let t=0;
+	return false;
+  }
+/* prevents the mobile browser from processing some default
+ * touch events, like swiping left for "back" or scrolling
+ * the page.
+ */
+document.ontouchmove = function(event) {
+  event.preventDefault();
+};
+
+let t=0;
 let x=255;
 let y=255;
 let z=255;
